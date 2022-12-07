@@ -1,0 +1,66 @@
+:root{
+    --fontplayfair: 'Playfair Display', serif;
+    --fontsans: 'Work Sans', sans-serif;
+}
+
+
+*{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+section.hero{
+    display: flex;
+    align-items: center;
+    min-height: 660px;
+    color: #ffffff;
+}
+
+section.hero figure{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+section.hero figure img{
+    width: 100%;
+    height: 100%;
+}
+
+section.hero .herocontent{
+    width: 592px;
+}
+
+section.hero .herocontent h1{
+    font-size: 60px;
+    line-height: 66px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-family: var(--fontplayfair);
+    z-index: 2;
+}
+    
+
+section.hero .herocontent p{
+    font-family: var(--fontsans);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 24px;
+    z-index: 2;
+}
+
+section.hero::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
