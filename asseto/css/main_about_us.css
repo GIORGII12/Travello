@@ -17,7 +17,18 @@ section.about_us{
     max-width: 1190px;
     width: 100%;
     margin: 0 auto;
-    top: 170px;
+    top: 150px;
+    margin-bottom: 250px;
+}
+
+@media (max-width: 1024px){
+    section.about_us{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        top: 50px;
+        margin-bottom: 140px;
+    }
 }
 
 .container{
@@ -29,6 +40,17 @@ section.about_us{
     margin: 0 auto;
 }
 
+@media (max-width: 1024px){
+    section.about_us .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
 figure.about_us_images{
     display: flex;
     align-items: flex-start;
@@ -36,6 +58,17 @@ figure.about_us_images{
     margin-right: 54px;
     width: 667px;
     height: 537px;
+}
+
+@media (max-width: 1024px){
+    figure.about_us_images{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0%;
+        width: auto;
+        height: auto;
+    }
 }
 
 .waterfall_image2{
@@ -48,10 +81,42 @@ figure.about_us_images{
     margin-right: 90px;
 }
 
+@media (max-width: 1024px){
+    .waterfall_image2{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+        height: 200px;
+        max-width: 50%;
+        max-height: 200px;
+        margin: 0;
+        object-fit: cover;
+        border: none;
+        position: relative;
+        padding: 0;
+        gap: 0;
+    }
+}
+
 .mountains_image3{
     display: flex;
     align-self: flex-end;
 }
+
+@media (max-width: 1024px){
+    .mountains_image3{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        height: 200px;
+        max-width: 50%;
+        max-height: 200px;
+        object-fit: cover;
+    }
+}
+
 
 .Aboutus_information_text{
     display: flex;
@@ -62,12 +127,29 @@ figure.about_us_images{
     max-width: 486px;
 }
 
+@media (max-width: 1024px){
+    .Aboutus_information_text{
+        gap: 0px;
+        top: 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+}
+
 p.textAboutus{
     font-family: var(--fontplayfair);
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
     color: #2094E6;
+}
+
+@media (max-width: 1024px){
+    p.textAboutus{
+        font-size: 16px;
+    }
 }
 
 h2{
@@ -78,10 +160,24 @@ h2{
     color: #121212;
 }
 
+@media (max-width: 1024px){
+    h2{
+        font-size: 20px;
+    }
+}
+
 p.information{
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     font-family: var(--fontsans);
     color: #333333;
+}
+
+@media (max-width: 1024px){
+    p.information{
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 150%;
+    }
 }

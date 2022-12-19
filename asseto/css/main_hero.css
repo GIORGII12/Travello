@@ -21,7 +21,6 @@ section.hero{
 @media (max-width: 1024px){
     section.hero{
         height: 500px;
-        margin-bottom: 50px;
     }
 }
 

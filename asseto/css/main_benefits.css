@@ -1,0 +1,73 @@
+:root{
+    --fontplayfair: 'Playfair Display', serif;
+    --fontsans: 'Work Sans', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+section.benefits{
+    margin-bottom: 128px;
+    padding: 0 15px;
+}
+
+.benefit_item{
+    padding: 40px 30px 30px;
+    box-shadow: 0 7px 29px rgb(100 100 111 / 20%);
+    background: #FFFFFF;
+}
+
+@media (max-width: 1024px){
+    .benefit_item{
+        width: 100%;
+    }
+}
+
+.benefit_icon{
+    margin-bottom: 10px;
+}
+
+.benefit_item:hover{
+    transform: rotateX(15deg);
+    transition: 0.5s;
+}
+
+.benefits_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    perspective: 1000px;
+}
+
+@media (max-width: 1024px){
+    .benefits_list{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+.benefit_title{
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--fontplayfair);
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.benefit_text{
+    font-size: 16px;
+    font-family: var(--fontsans);
+    font-weight: 400;
+    line-height: 120%;
+    color: #333333;
+}
