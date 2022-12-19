@@ -22,6 +22,12 @@ header.mainheader{
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
+@media (max-width: 1024px){
+    header.mainheader{
+        padding: 15px;
+    }
+}
+
 header.mainheader .container{
     display: flex;
     align-items: center;
@@ -29,6 +35,12 @@ header.mainheader .container{
     max-width: 1190px;
     width: 100%;
     margin: 0 auto;
+}
+
+@media (max-width: 1024px){
+    header.mainheader .container .logo{
+        margin: 0 auto;
+    }
 }
 
 .container{
@@ -41,6 +53,12 @@ header.mainheader .container{
     display: flex;
     align-items: center;
     z-index: 2;
+}
+
+@media (max-width: 1024px){
+    .maincontent{
+        display: none;
+    }
 }
 
 .maincontent nav{
