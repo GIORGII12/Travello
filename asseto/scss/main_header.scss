@@ -3,7 +3,6 @@
     --fontsans: 'Work Sans', sans-serif;
 }
 
-
 *{
     box-sizing: border-box;
     position: relative;
@@ -11,35 +10,54 @@
     padding: 0;
 }
 
-section.hero::before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-}
-
 header.mainheader{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
+    margin: 0;
     padding: 20px 120px;
     z-index: 2;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1024px){
+    header.mainheader{
+        padding: 15px;
+    }
+}
+
+header.mainheader .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px){
+    header.mainheader .container .logo{
+        margin: 0 auto;
+    }
+}
+
+.container{
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .maincontent{
     display: flex;
     align-items: center;
     z-index: 2;
+}
+
+@media (max-width: 1024px){
+    .maincontent{
+        display: none;
+    }
 }
 
 .maincontent nav{
@@ -87,49 +105,5 @@ header.mainheader{
 .button a:hover{
     background-color: #51b7ff;
     color: #f7f7f7;
-}
-
-
-
-section.hero{
-    display: flex;
-    align-items: center;
-    min-height: 660px;
-    color: #ffffff;
-}
-
-section.hero figure{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-section.hero figure img{
-    width: 100%;
-    height: 100%;
-}
-
-section.hero .herocontent{
-    margin-left: 120px;
-    width: 592px;
-}
-
-section.hero .herocontent h1{
-    font-size: 60px;
-    line-height: 66px;
-    margin-bottom: 24px;
-    font-weight: 600;
-    font-family: var(--fontplayfair);
-    z-index: 2;
-}
-    
-
-section.hero .herocontent p{
-    font-family: var(--fontsans);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 24px;
-    z-index: 2;
+    transform: scale(1.05);
 }
